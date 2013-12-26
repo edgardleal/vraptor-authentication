@@ -31,8 +31,6 @@ public class LoginHandler implements StereotypeHandler {
     for (Method method : resource.getMethods()) {
       searchForLoginActionAndStore(resource, method);
     }
-
-    ifThereIsNotAnyLoginActionThrowAnException();
   }
 
   public Class<?> getClassOfController() {
